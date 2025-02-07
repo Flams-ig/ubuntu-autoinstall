@@ -2,21 +2,24 @@
 autoinstall:
     version: 1
     identity:
-        realname: 'Dionatan Simioni'
+        realname: 'André Dinis'
         hostname: ubuntu-desktop
         username: diolinux
         password: '$y$j9T$uhkxlm8nUQaNu.6rl4k2d.$DIldpYy96OHg8lFjfXfc671BZcGWkPOmaDONGAhGSg3'
-    locale: pt_BR.utf8
+    locale: pt_PT.utf8
     keyboard:
-        layout: br
-    timezone: "America/Sao_Paulo"   
+        layout: pt
+    timezone: "Europe/Lisbon"   
     packages:
-        - libreoffice
-        - gimp
+        - steam
         - git
-        - wget
+        - curl 
     snaps:
         - name: spotify
+          channel: stable
+          classic: false
+
+        - name: Discord
           channel: stable
           classic: false
     codecs:
